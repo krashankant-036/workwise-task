@@ -1,0 +1,169 @@
+.allconnect {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap;
+}
+
+.Ticket-seat {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 30px;
+    margin:50px;
+    
+    /* flex: 1 1 300px; */
+}
+
+.hx {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.seats {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.seats ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    list-style-type: none;
+}
+
+.seats li {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btns button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btns1 {
+    background-color: #ffcc00;
+    color: #333;
+    width: 60%;
+    margin-left: 20px;
+}
+
+.btns2 {
+    background-color: #2cc12c;
+    color: #fff;
+    margin-right: 20px;
+    width: 60%;
+}
+
+/* .book-field {
+    margin-top: 2000px;
+    flex: 1 1 300px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px;
+
+} */
+
+.book-field{
+    margin-top: 200px;
+    margin-right: 200px;
+    margin-left: 50px;
+    background-color: #f9f9f9;
+}
+
+.s1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.books1 {
+    display: flex;
+    gap: 15px;
+}
+
+.booking input.nums {
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking .book {
+    background-color: #2a9df4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.booking .reset {
+    background-color: #2a9df4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .allconnect {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Ticket-seat, .book-field {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    .seats ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .btns button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .booking input.nums {
+        width: 100%;
+    }
+}
